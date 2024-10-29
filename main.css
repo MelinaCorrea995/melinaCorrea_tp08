@@ -1,0 +1,198 @@
+body {
+    width: 100%;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* FOTO DE PERFIL */
+
+
+.perfil img {
+    width: 50%;
+}
+
+.descripcion {
+    text-align: center;
+}
+
+.p {
+    text-align: center;
+    font-size: 10px;
+}
+
+.parrafo{
+    display: none;
+}
+
+h3 {
+    font-size: 30px;
+    margin: 15px;
+}
+
+/* proyectos */
+
+#proyectos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.articulo img {
+    width: 75%;
+    border-radius: 10px;
+    margin: 5px;
+    /* box-shadow: 0px 0px 10px rgba(200, 195, 195, 0.2), 5px 5px 20px rgba(186, 161, 161, 0.5); */
+
+}
+
+.articulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.img2 {
+    display: none;
+}
+
+p {
+    display: block;
+    width: 90%;
+    /* margin: 10px; */
+    text-align: center;
+}
+
+/* CONTACTO */
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+button {
+    color: black;
+}
+
+/* REDES SOCIALES */
+
+.redes-sociales {
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+}
+
+
+.ri-instagram-fill {
+    color: #677be3;
+    background-color: white;
+    border: 1px solid #5851DB;
+    /* padding: 1px; */
+    border-radius: 50%;
+}
+
+.ri-github-fill {
+    color: black;
+}
+
+.ri-facebook-circle-fill{
+    background-color: blue;
+}
+
+@media (min-width:768px) {
+
+    .img2 {
+        display: block;
+    }
+
+    .parrafo {
+        display: block;
+        margin: 10px;
+        width: 40%
+    }
+}
+
+#contacto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+@media (min-width:1024px) {
+    .perfil {
+        width: 400px;
+        transition: width 3s;
+    }
+
+    .perfil:hover {
+        width: 700px;
+    }
+
+    /* proyectos */
+
+    .articulo img {
+        width: 40%;
+        box-shadow: 0px 0px 10px rgba(200, 195, 195, 0.2), 5px 5px 20px rgba(186, 161, 161, 0.5);
+    }
+
+    .articulo:hover{
+        box-shadow: (#000000 0%, #6f3232 25%, #2e2c3e 50%, #2f2a36 75%);
+    }
+
+    p:hover {
+        color: #d49595;
+
+    }
+
+    /* contacto */
+
+    button {
+        transition: background-color 1s;
+    }
+
+    button:hover {
+        background-color: #d49595;
+    }
+
+    .ri-facebook-circle-fill:hover {
+        background-color: blue;
+    }
+
+    .ri-instagram-fill {
+        color: #677be3;
+        background-color: white;
+        border: 1px solid #5851DB;
+        /* padding: 1px; */
+        border-radius: 50%;
+    }
+
+    .ri-github-fill {
+        color: black;
+    }
+
+    .ri-github-fill:hover {
+        color: white;
+    }
+
+    .ri-instagram-fill:hover {
+        color: #833AB4;
+        background-color: white;
+        border-color: #9e567f;
+
+    }
+
+}
